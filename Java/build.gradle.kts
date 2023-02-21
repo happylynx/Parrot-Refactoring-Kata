@@ -18,3 +18,7 @@ dependencies {
     // Use JUnit test framework
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
 }
+
+tasks.getByName<Test>("test") {
+    useJUnitPlatform()
+}
