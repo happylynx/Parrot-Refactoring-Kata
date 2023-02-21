@@ -1,5 +1,11 @@
 // Apply the java plugin to add support for Java
-apply plugin: 'java'
+plugins {
+    id("java")
+}
+
+group = "org.codingdojo"
+version = "1.0-snapshot"
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -10,5 +16,5 @@ repositories {
 
 dependencies {
     // Use JUnit test framework
-    testImplementation 'org.junit.jupiter:junit-jupiter::5.9.2'
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
 }
