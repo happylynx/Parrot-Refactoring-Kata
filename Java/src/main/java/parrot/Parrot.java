@@ -2,6 +2,7 @@ package parrot;
 
 public class Parrot {
 
+    public static final double BASE_SPEED = 12.0;
     private final ParrotTypeEnum type;
     private final int numberOfCoconuts;
     private final double voltage;
@@ -22,7 +23,7 @@ public class Parrot {
         };
     }
 
-    private double getBaseSpeed(double voltage) {
+    private static double getBaseSpeed(double voltage) {
         return Math.min(24.0, voltage * getBaseSpeed());
     }
 
@@ -30,8 +31,8 @@ public class Parrot {
         return 9.0;
     }
 
-    private double getBaseSpeed() {
-        return 12.0;
+    private static double getBaseSpeed() {
+        return BASE_SPEED;
     }
 
 }
