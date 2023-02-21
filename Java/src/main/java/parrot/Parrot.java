@@ -15,6 +15,9 @@ public class Parrot {
         this.isNailed = isNailed;
     }
 
+    /**
+     * in km/h
+     */
     public double getSpeed() {
         return switch (type) {
             case EUROPEAN -> getBaseSpeedKmh();
