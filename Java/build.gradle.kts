@@ -22,3 +22,8 @@ dependencies {
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
+
+tasks.wrapper {
+    gradleVersion = "8.0.1"
+}
+}
